@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Roboto';
+}
+.each-history-card {
+  display: flex;
+  list-style-type: none;
+}
+.time-accessed {
+  color: #475569;
+  font-weight: 500;
+  font-size: 13px;
+}
+.each-history-card-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 10px;
+  flex-grow: 1;
+}
+.card-content {
+  display: flex;
+  align-items: center;
+}
+.app-icon {
+  width: 20px;
+  height: 20px;
+}
+.title {
+  font-size: 14px;
+  color: #475569;
+  margin-left: 10px;
+  max-width: 30vw;
+}
+.domain-url {
+  color: #64748b;
+  font-size: 12px;
+  padding-left: 7px;
+}
+.delete-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.delete-icon {
+  cursor: pointer;
+  border-width: 0;
+  border-radius: 3px;
+  background-color: transparent;
+}
+@media screen and (min-width: 768px) {
+  .time-accessed {
+    font-size: 18px;
+  }
+  .each-history-card-details {
+    margin-left: 30px;
+  }
+  .app-icon {
+    width: 30px;
+    height: 30px;
+  }
+  .title {
+    font-size: 20px;
+    flex-grow: 1;
+    max-width: none;
+    margin-left: 25px;
+  }
+  .domain-url {
+    font-size: 18px;
+    padding-left: 15px;
+  }
+}
